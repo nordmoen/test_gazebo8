@@ -1,0 +1,7 @@
+<launch>
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="gui" value="false" />
+	</include>
+	<node name="test_node" pkg="test_gazebo8" type="test_gazebo8_node"
+		required="true" output="screen" />
+</launch>
